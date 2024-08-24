@@ -1,15 +1,41 @@
 @forward "../base/index";
 @use "../base/index";
 
+// Header styles Star
+
 header {
   background-color: index.$mainBgColor;
 }
+// Header styles End
+
+// Body styles Start
 main {
   background-color: index.$mainBodyColor;
+  padding: index.$sectionPadding;
+  text-align: index.$textCenter;
 }
+
+.service {
+  background-color: index.$serviceBgColor;
+  padding: index.$sectionPadding;
+}
+// Body styles End
+
+// Footer styles Start
 footer {
   background-color: index.$mainFooterColor;
   color: index.$whiteColor;
   text-align: center;
   padding: 10px 0;
+}
+// Footer styles End
+
+@mixin p-tag-style($textSizer, $fontFamily, $color) {
+  font-size: $textSizer;
+  font-family: $fontFamily;
+  color: $color;
+}
+
+.service p {
+  @include p-tag-style(20px, arial, red);
 }
