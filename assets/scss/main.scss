@@ -1,0 +1,10 @@
+@forward "../base/index";
+@use "../base/index";
+
+header {
+  background-color: index.$mainBgColor;
+}
+
+main {
+  background-color: index.$mainBodyColor;
+}
