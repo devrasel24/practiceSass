@@ -37,3 +37,6 @@ footer {
 .service p {
   @include p-tag-style(20px, arial, red);
 }
+.service p a {
+  @include p-tag-style(20px, arial, red);
+}
